@@ -6,12 +6,12 @@ if (APPLE)
     set(CMAKE_CXX_FLAGS "-framework Cocoa -framework IOKit -framework OpenGL")
 endif()
 
-set(WINDOW_NAME "OpenGL Example")
+set(WINDOW_NAME "First OpenGL Example")
 set(WINDOW_WIDTH 960)
 set(WINDOW_HEIGHT 540)
 
 project(${PROJECT_NAME})
-add_executable(${PROJECT_NAME} opengl_example/src/main.cpp)
+add_executable(${PROJECT_NAME} src/main.cpp)
 
 include(Dependency.cmake)
 
