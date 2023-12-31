@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.13)
 
-set(PROJECT_NAME first_opengl_example)
+set(PROJECT_NAME opengl_example)
 set(CMAKE_CXX_STANDARD 17)
 if (APPLE)
     set(CMAKE_CXX_FLAGS "-framework Cocoa -framework IOKit -framework OpenGL")
@@ -11,7 +11,11 @@ set(WINDOW_WIDTH 960)
 set(WINDOW_HEIGHT 540)
 
 project(${PROJECT_NAME})
-add_executable(${PROJECT_NAME} opengl_example/src/main.cpp)
+add_executable(${PROJECT_NAME}
+    opengl_example/src/main.cpp
+    opengl_example/src/common.cpp opengl_example/src/common.h
+    opengl_example/src/shader.cpp opengl_example/src/shader.h
+    )
 
 include(Dependency.cmake)
 
