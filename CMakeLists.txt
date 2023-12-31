@@ -15,6 +15,7 @@ add_executable(${PROJECT_NAME}
     opengl_example/src/main.cpp
     opengl_example/src/common.cpp opengl_example/src/common.h
     opengl_example/src/shader.cpp opengl_example/src/shader.h
+    opengl_example/src/program.cpp opengl_example/src/program.h
     )
 
 include(Dependency.cmake)
