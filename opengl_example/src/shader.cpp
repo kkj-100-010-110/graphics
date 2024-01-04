@@ -10,8 +10,7 @@ ShaderUPtr Shader::CreateFromFile(const std::string &filename, GLenum shaderType
 
 Shader::~Shader()
 {
-    if (m_shader)
-    {
+    if (m_shader) {
         glDeleteShader(m_shader);
     }
 }

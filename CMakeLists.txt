@@ -19,6 +19,8 @@ add_executable(${PROJECT_NAME}
     opengl_example/src/context.cpp opengl_example/src/context.h
     opengl_example/src/buffer.cpp opengl_example/src/buffer.h
     opengl_example/src/vertex_layout.cpp opengl_example/src/vertex_layout.h
+    opengl_example/src/image.cpp opengl_example/src/image.h
+    opengl_example/src/texture.cpp opengl_example/src/texture.h
     )
 
 include(Dependency.cmake)
